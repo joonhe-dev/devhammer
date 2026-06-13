@@ -2,7 +2,7 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { join, resolve } from 'node:path';
 import { mkdir, writeFile, rm, readFile } from 'node:fs/promises';
-import { existsSync, writeFileSync } from 'node:fs';
+import { existsSync } from 'node:fs';
 import {
   parseEnvFile,
   parseEnvExample,
