@@ -147,8 +147,8 @@ describe('analyzeDeps', () => {
     const bigLibDir = join(TEMP_DIR, 'node_modules', 'big-lib');
     mkdirSync(bigLibDir, { recursive: true });
     writeFileSync(join(bigLibDir, 'package.json'), JSON.stringify({ name: 'big-lib', version: '1.0.0' }), 'utf-8');
-    // Create a file > 1MB
-    const largeContent = 'x'.repeat(1024 * 1024 + 1);
+    // Create a file > 5MB
+    const largeContent = 'x'.repeat(5 * 1024 * 1024 + 1);
     writeFileSync(join(bigLibDir, 'large.dat'), largeContent, 'utf-8');
 
     const result = analyzeDeps(TEMP_DIR, {});
