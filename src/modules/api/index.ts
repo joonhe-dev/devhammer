@@ -83,7 +83,7 @@ async function resolveBody(bodyData: string, rootDir: string, env: Record<string
       } catch {
         return content;
       }
-    } catch (err) {
+    } catch {
       throw new Error(`Failed to read body file: ${filePath}`);
     }
   }
