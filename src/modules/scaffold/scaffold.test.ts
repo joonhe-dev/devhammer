@@ -1,7 +1,7 @@
 // devhammer — Scaffold Module Tests
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { join, resolve } from 'node:path';
-import { mkdir, writeFile, rm } from 'node:fs/promises';
+import { mkdir, rm } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import {
   interpolate,
@@ -11,7 +11,6 @@ import {
   detectVariables,
   scaffoldModule,
 } from './index.js';
-import { builtinTemplates } from './templates.js';
 
 // ─── Interpolation Engine Tests ─────────────────────────
 
