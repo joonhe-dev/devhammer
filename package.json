@@ -1,6 +1,6 @@
 {
   "name": "devhammer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "🔨 A local-first CLI toolset for TypeScript full-stack developers",
   "bin": { "devhammer": "./dist/index.js" },
   "type": "module",
